@@ -19,6 +19,7 @@
 body {
     background-color: var(--background-color);
     color: var(--white);
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
