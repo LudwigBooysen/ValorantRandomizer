@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Randomizer</title>
+    <link rel="stylesheet" href="styles/styles.css"></link>
+</head>
+<body>
+
+    <!-- Content -->
+    <main>
+        <h1 class="title">Valorant Randomizer</h1>
+
+        <br>
+
+        <p>Welcome to the Valorant Randomizer! Click the button below to get a random agent, weapon, and map for your next game.</p>
+
+        <br>
+
+        <button id="randomizeAll" onclick="randomizeAll()">Randomize Both</button>
+
+        <br>
+
+        <label for="budget">Credits</label>
+        <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+        <br>
+
+        <div id="results">
+            <h2>Your Randomized Loadout:</h2>
+            <br>
+
+            <div id="agentWeaponResults">
+                <button id="randomizeAgent" onclick="randomizeAgent()">Randomize Agent</button>
+                <p><strong>Agent:</strong> <span id="agentResult">-</span></p>
+
+                <button id="randomizeWeapon" onclick="randomizeWeapon()">Randomize Weapon</button>
+                <p><strong>Weapon:</strong> <span id="weaponResult">-</span></p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
