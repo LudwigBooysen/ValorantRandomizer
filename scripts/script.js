@@ -64,8 +64,6 @@ async function randomizeWeapon() {
         weapon => weapon.shopData.cost <= budget
     );
 
-    console.log(filteredWeapons, budget);
-
     if (filteredWeapons.length === 0) return;
 
     const weapon = filteredWeapons[Math.floor(Math.random() * filteredWeapons.length)];
